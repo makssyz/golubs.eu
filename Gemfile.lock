@@ -88,7 +88,7 @@ PLATFORMS
 DEPENDENCIES
   cloudcannon-jekyll-bookshop (= 2.2.2)
   jekyll-bookshop (= 2.2.2)
-  jekyll-pagebreak (~> 0.3)
+  jekyll-pagebreak (= 0.6.0)
   jekyll-sitemap
   jekyll-tagging
   jekyll-watch!
