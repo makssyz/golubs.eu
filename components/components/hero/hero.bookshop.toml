@@ -6,10 +6,10 @@ icon = "wysiwyg"
 tags = ["Structure", "Text", "Links"]
 
 [props]
-title = "Hi there, I am Vanessa Marley"
+title = "Hi there, I am Makss Golubs"
 description_html = "<strong>Photographer</strong> and <strong>Visual Content Strategist</strong> from Albany. I work as a lifestyle, product, and landscape photographer, creating images for a diverse range of requests, from online media to printed artwork."
-image = "/images/01.jpg"
-image_alt = "Vanessa Marley's picture"
+image = "/images/01.png"
+image_alt = "Makss Golubs's picture"
 cta_button = "Get in touch"
 cta_button_link = "#contact"
 works_button = "See my works"
