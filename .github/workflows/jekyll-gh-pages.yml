@@ -38,7 +38,7 @@ jobs:
         run: |
           docker run \
             -v ${{ github.workspace }}:/srv/jekyll \
-            -e BUNDLE_GEMFILE=docs/Gemfile \
+            -e BUNDLE_GEMFILE=site/Gemfile \
             jekyll/builder:4 \
             /bin/bash -c 'chmod 777 /srv/jekyll && bundle install && bundle exec jekyll build --source site'
         env:
