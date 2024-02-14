@@ -33,6 +33,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Copy pagebreak binary
+        run: cp bin/pagebreak /usr/local/bin/pagebreak
+        if: success() # Only run if the previous steps were successful
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: |
