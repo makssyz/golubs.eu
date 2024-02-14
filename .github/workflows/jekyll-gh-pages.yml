@@ -42,7 +42,8 @@ jobs:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
       - name: Install Dependencies
-        run: bundle install --path vendor/bundle
+        run: bundle install
+        working-directory: ./docs
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
