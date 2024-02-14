@@ -33,17 +33,8 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3.0'
-      - name: Install Bundler
-        run: gem install bundler --no-document
-      - name: Cache Bundler Dependencies
-        uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-      - name: Install Dependencies
-        run: bundle install
-        working-directory: ./docs
+          ruby-version: '3.3' # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
