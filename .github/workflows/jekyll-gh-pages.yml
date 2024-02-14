@@ -30,11 +30,17 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+      - name: Install Bundler
+        run: gem install bundler --no-document
+      - name: Cache Bundler Dependencies
+        uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
       - name: Install Dependencies
-        working-directory: ./docs
-        run: |
-          sudo gem install bundler
-          bundle install
+        run: bundle install --path vendor/bundle
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
