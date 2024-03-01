@@ -1,34 +1,10 @@
-# Vonge
+# Welcome
 
-Vonge is a Personal portfolio/blog site template for Jekyll. Browse through a [live demo](https://jazzed-kale.cloudvent.net/).
-Increase the web presence of your brand with this configurable theme.
+This is my personal portfolio & blog page, created from the wonderful [Vonge](https://github.com/CloudCannon/vonge-jekyll-bookshop-template/tree/main/site) Jekyll template and hosted for free on [Github Pages](https://pages.github.com/). Except for my domain (which you can reach at https://www.golubs.eu) my website was made at zero-cost. A warm THANK YOU to the OpenSource community making this project possible.
 
-![Vonge template screenshot](_screenshot.png)
+# Develop Notes
 
-Vonge was made by [CloudCannon](http://cloudcannon.com/), the JAMStack Cloud CMS.
-The component library is built and maintained for use with [Bookshop](https://github.com/cloudcannon/bookshop/)
-
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Community](https://cloudcannon.com/community/).
-
-[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/vonge-jekyll-bookshop-template)
-
-## Features
-
-* Component library for website building
-* Fully configurable Website
-* Pre-built pages
-* Pre-styled components
-* Blog
-* Category pages
-* Testimonials
-* Portfolio
-* Live editing with [CloudCannon](http://cloudcannon.com/)
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* Search engine optimisation
-
-## Develop
-
-Vonge was built with [Jekyll](http://jekyllrb.com/) version 4.2.0, but should support newer versions as well.
+Use [Jekyll](http://jekyllrb.com/) version 4.2.0 or newer.
 
 Install the dependencies for Bookshop:
 
