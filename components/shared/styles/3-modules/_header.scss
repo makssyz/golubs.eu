@@ -35,8 +35,31 @@
   }
 }
 
-.logo__image {
-  max-height: 50px;
+.logo__image-container {
+  position: relative;
+
+  .logo__image,
+  .logo__image-hover {
+    max-height: 50px;
+    transition: opacity;
+  }
+
+  &:hover {
+    .logo__image {
+      opacity: 0;
+    }
+
+    .logo__image-hover {
+      opacity: 1;
+    }
+  }
+
+  .logo__image-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
 }
 
 /* Nav */
