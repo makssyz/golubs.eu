@@ -41,3 +41,21 @@
 		}
 	}
 }
+
+.c-page-heading__tags {
+	margin: 30px auto 0;
+	max-width: 560px;
+	line-height: 1.6;
+	text-align: center; // Ensures inline elements are centered
+  
+	@media only screen and (max-width: $mobile) {
+	  margin: 24px auto 0;
+	}
+  
+	.post-tags {
+	  justify-content: center; // Overrides default flex alignment for this section
+	  flex-wrap: wrap; // Ensures tags wrap properly
+	  display: flex; // Makes sure flexbox is applied
+	  gap: 8px; // Adds spacing between tags
+	}
+  }

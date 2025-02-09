@@ -5,5 +5,14 @@
     {% if include.description %}
       <p class="{{c}}__description">{{ include.description }}</p>
     {% endif %}
+    {% if page.tags.size >= 1 %}
+    <div class="{{c}}__tags">
+      <div class="post-tags">
+        {% for tag in page.tags %}
+          <a href="{{ site.baseurl }}/tag/{{ tag | downcase }}" class="post-tags__tag">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
   </div>
 </div>
